@@ -1,0 +1,184 @@
+
+// - - - - - - - - - - - - - - - - - - - -
+//   Normalize
+// - - - - - - - - - - - - - - - - - - - -
+
+@import vendor/normalize
+
+@font-face
+  font-family: 'Industry Medium'
+  src: url('../fonts/Industry Medium.woff2') format('woff2'), url('../fonts/Industry Medium.woff') format('woff'), url('../fonts/Industry Medium.ttf') format('truetype')
+
+
+a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, ul, var
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-weight: inherit
+  font-style: inherit
+  font-family: inherit
+  font-size: 100%
+  vertical-align: baseline
+
+
+html,
+body
+  height: 100%
+  overflow: hidden
+body
+  line-height: 1
+  background: #1C1E22
+
+
+
+#canvas
+  width: 100%
+  height: 100%
+  z-index: -1
+
+span.title
+  color: #E23646
+
+main
+  font-family: 'Industry Medium', monospace
+  //background: #141414
+  font-weight: 400
+  color: #FEFEFE
+  position: absolute
+  height: 100%
+  width: 100%
+  left: 0
+  top: 0
+  z-index: 1
+  aside.version
+    position: absolute
+    top: 20px
+    transition: all .3s ease-in-out
+    text-overflow: ellipsis
+    white-space: nowrap
+    overflow: hidden
+    opacity: .1
+    margin-left: 16px
+    &:hover
+      opacity: 1
+    @media screen and (max-width: 768px)
+      font-size: .8rem
+    @media screen and (max-width: 320px)
+      font-size: .7rem
+  .container
+    justify-content: center
+    align-items: center
+    position: absolute
+    overflow: auto
+    display: flex
+    bottom: 50px
+    right: 0
+    left: 0
+    top: 0
+    .wrapper
+      max-width: 580px
+      padding: 24px
+      margin: auto
+      width: 100%
+header
+  justify-content: space-between
+  align-items: center
+  position: absolute
+  padding: 0 16px
+  display: flex
+  width: 100%
+  height: 60px
+  top: 0
+  //right: 20px
+  aside.version
+    font-size: 1rem
+    opacity: .25
+    //display: inline-block
+    margin-left: auto
+section.intro
+  display: block
+  font-size: 2rem
+  text-align: center
+  h1
+    display: inline-block
+section.info
+  position: relative
+  line-height: 1.7
+  font-size: 1.3rem
+  margin: 20px 0
+  letter-spacing: .05rem
+  transition: all .1s ease-in-out
+  @media screen and (max-width: 768px)
+    font-size: 1rem
+    margin: 10px 0
+  @media screen and (max-width: 320px)
+    font-size: .7rem
+svg.logo
+  //max-width: 300px
+  //max-height: 300px
+  width: 40%
+  height: 40%
+  display: block
+  margin: 0 auto 30px auto
+  transition: all .1s ease-in-out
+svg.tag
+  width: 40%
+  height: 40%
+  margin: 10px 0
+  transition: all .1s ease-in-out
+  @media screen and (max-width: 768px)
+    width: 60%
+    height: 60%
+.content
+  a
+    color: #ffffff
+    border-bottom: 2px dashed #E23646
+    text-decoration: none
+    &:hover
+      border-bottom: 2px solid #E23646
+  p:nth-child(2)
+    margin-top: 40px
+  a.cm
+    border-bottom: none
+    background: rgba(20, 20, 20, .3)
+    padding: 10px
+    border-radius: 4px
+    font-size: 1rem
+    transition: all .3s ease-in-out
+    &:hover
+      background: rgba(20, 20, 20, .6)
+    span
+      color: #24DA77
+    @media screen and (max-width: 320px)
+      font-size: .7rem
+
+
+footer
+  justify-content: space-between
+  align-items: center
+  line-height: 2
+  font-size: 1rem
+  position: absolute
+  display: flex
+  //padding: 0 16px
+  bottom: 0
+  width: 100%
+  height: 50px
+  .social
+    display: flex
+    margin-right: 16px
+    margin-left: auto
+    a.link
+      transition: all .3s ease-in-out
+      margin-left: 16px
+      text-decoration: none
+      opacity: .25
+      color: #FEFEFE
+      &:hover
+        color: #E23646
+        opacity: 1
+      @media screen and (max-width: 768px)
+        font-size: .8rem
+      @media screen and (max-width: 320px)
+        font-size: .7rem

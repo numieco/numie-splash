@@ -1,0 +1,51 @@
+extends layout
+
+block content
+  //calls the block named 'content'
+
+  canvas#canvas
+  main
+    aside.version v0.9.3
+    .container
+      .wrapper
+        section.intro
+          svg.logo(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 500 500')
+            title Numie
+            path(d='M482.24,112.88A132.35,132.35,0,0,0,388,18.54,541.09,541.09,0,0,0,251,1.28,541.27,541.27,0,0,0,115.7,18.11a134.21,134.21,0,0,0-96.39,96.47A542.85,542.85,0,0,0,2.5,250,541.19,541.19,0,0,0,19.76,387.09,132.35,132.35,0,0,0,114,481.45a540.28,540.28,0,0,0,137,17.27,540.44,540.44,0,0,0,137-17.27,132.35,132.35,0,0,0,94.26-94.36A541.19,541.19,0,0,0,499.5,250a541.27,541.27,0,0,0-17.25-137.09', style='fill:#e23646')
+            path(d='M353.53,406.12l-2.62-2.65L315.64,368.2V261.49l76.06,76.06v30l-4,4ZM201.59,147.43V254.14l98.52,98.52V245.95ZM186,238.6V131.89L148.1,93.94l-37.81,37.81v31.09l.1.1V163ZM110.39,185V367.86h0l37.71,38.25,37.84-38.25h0V260.55Zm280.9,130.16v-183L353.58,93.88l-37.84,38.25V239.61Z', style='fill:#1c1e22')
+
+          svg.tag(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 486.66 59.67')
+            title Hi, we're Numie.
+            path(d='M8,6.27h5V27.89H38V6.27h5v49H38V32.5H13V55.24H8Z', transform='translate(-7.97 -4.17)', style='fill:#fff')
+            path(d='M55.32,5.57h5.46v6.16H55.32Zm.35,11.89h4.76V55.24H55.67Z', transform='translate(-7.97 -4.17)', style='fill:#fff')
+            path(d='M74,55.24H70.78V48.1h6.71v5.18c0,2.38-.35,3-2.59,6.57l-2.52,4h-2.8Z', transform='translate(-7.97 -4.17)', style='fill:#fff')
+            path(d='M95.72,17.46h4.9l8.11,32.94,9.44-32.94h4.62l9.44,32.94,8.11-32.94h4.76L134.82,55.24h-5.25l-9.09-31.48-9.09,31.48H106Z', transform='translate(-7.97 -4.17)', style='fill:#fff')
+            path(d='M155.31,37.33v8.81c0,3.5,1.4,4.9,4.9,4.9h9.65c3.5,0,4.9-1.4,4.9-4.9V43.41h4.76v2.31c0,6.44-3.08,9.51-9.51,9.51h-9.93c-6.43,0-9.51-3.08-9.51-9.51V27c0-6.44,3.08-9.51,9.51-9.51H170c6.44,0,9.51,3.08,9.51,9.51V37.33Zm0-10.77v6.85h19.44V26.56c0-3.5-1.33-4.9-4.9-4.9h-9.65C156.71,21.66,155.31,23.06,155.31,26.56Z', transform='translate(-7.97 -4.17)', style='fill:#fff')
+            path(d='M191,13.41h-3.22V6.27h6.71v5.18c0,2.38-.35,3-2.59,6.57l-2.52,4h-2.8Z', transform='translate(-7.97 -4.17)', style='fill:#fff')
+            path(d='M202.46,17.46h4.76v5.46c3.36-2.8,6.57-5.46,12-5.46h2.66v4.62h-2.66c-4.83,0-8.32,2-12,4.41V55.24h-4.76Z', transform='translate(-7.97 -4.17)', style='fill:#fff')
+            path(d='M232.25,37.33v8.81c0,3.5,1.4,4.9,4.9,4.9h9.65c3.5,0,4.9-1.4,4.9-4.9V43.41h4.76v2.31c0,6.44-3.08,9.51-9.51,9.51H237c-6.44,0-9.51-3.08-9.51-9.51V27c0-6.44,3.08-9.51,9.51-9.51h9.93c6.44,0,9.51,3.08,9.51,9.51V37.33Zm0-10.77v6.85H251.7V26.56c0-3.5-1.33-4.9-4.9-4.9h-9.65C233.65,21.66,232.25,23.06,232.25,26.56Z', transform='translate(-7.97 -4.17)', style='fill:#fff')
+            path(d='M487.91,48.1h6.71v7.13h-6.71Z', transform='translate(-7.97 -4.17)', style='fill:#fff')
+            path(d='M319.52,6.27v49h-9.79L290.49,22.57V55.24H280.7v-49h10.49l18.54,31.55V6.27Z', transform='translate(-7.97 -4.17)', style='fill:#e23646')
+            path(d='M351.34,49.71c-2.52,3.5-5,5.88-11.89,5.88-7.34,0-10.21-2.87-10.21-9.37V17.46h9.65V45.09c0,1.4.42,1.82,2.45,1.82,4.69,0,7.13-.7,10-2.24V17.46H361V55.24h-9.65Z', transform='translate(-7.97 -4.17)', style='fill:#e23646')
+            path(d='M422,26.42V55.24h-9.65V27.54c0-1.4-.42-1.82-2.17-1.82a17.64,17.64,0,0,0-9.3,2.24V55.24h-9.65V27.54c0-1.4-.42-1.82-2.17-1.82a17.64,17.64,0,0,0-9.3,2.24V55.24h-9.65V17.46h9.65v5.46c2.52-3.5,5-5.88,11.19-5.88,5.81,0,8.81,2,9.65,6.23C403.1,19.63,405.9,17,412.06,17,419.12,17,422,19.91,422,26.42Z', transform='translate(-7.97 -4.17)', style='fill:#e23646')
+            path(d='M430.45,15V4.17h10.21V11Zm9.93,40.25h-9.65V18.49l9.65-3.71Z', transform='translate(-7.97 -4.17)', style='fill:#e23646')
+            path(d='M458.36,45.86c0,1.12.42,1.54,1.54,1.54h8.88c1.12,0,1.54-.42,1.54-1.54V42.92H480v3.22c0,6.23-2.87,9.09-9.09,9.09H457.8c-6.23,0-9.09-2.87-9.09-9.09V26.56c0-6.23,2.87-9.09,9.09-9.09h13.08c6.23,0,9.09,2.87,9.09,9.09V39.08H458.36ZM459.9,25.3c-1.12,0-1.54.42-1.54,1.54v5.74h12V26.84c0-1.12-.42-1.54-1.54-1.54Z', transform='translate(-7.97 -4.17)', style='fill:#e23646')
+
+
+
+          section.info
+            .content
+              p We're an in-house design &amp; marketing studio that brings transparency across all platforms. Sound like we can help? <a href='mailto:hello@numie.co?subject=Howdy!'> Get in touch!</a>
+              p <a class='cm' href='https://cliquemeet.com/' target='_blank'>Latest project: <span>Clique Meet</span></a>
+    footer
+      .social
+        a.link(href='https://twitter.com/numieco', target='_blank') Twitter
+        a.link(href='https://www.instagram.com/numieco/', target='_blank') Instagram
+        a.link(href='https://www.facebook.com/numieco/', target='_blank') Facebook
+  //h1 Hi, we're <span class='title'>Numie</span>.
+
+
+
+
+  script(src='/assets/js/main.js')
+  block ga
